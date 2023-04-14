@@ -73,7 +73,7 @@ except Exception as ex:
         f.write('\n{}'.format(msg))
 
 while True:
-    time.sleep(30)
+    time.sleep(300)
     send_file()
 
 
